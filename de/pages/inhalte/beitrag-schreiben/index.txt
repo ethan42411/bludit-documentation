@@ -1,0 +1,49 @@
+Title: Einen Beitrag schreiben
+Position: 1
+Content:
+
+Es gibt zwei Möglichkeiten, einen Beitrag zu schreiben. Einen "Easy Mode" (Einfachen Modus) mit einer grafischen Oberfläche, und einen "Advanced Mode" (Fortgeschrittenen Modus). Wenn Du den "Advanced Mode" verwenden möchtest, kontrolliere zuerst die [Einstellungen für Beiträge und Seiten](../content/variables-for-posts-and-pages).
+
+#### Inhalt
+1. [Easy Mode](#easy-mode)
+1. [Advanced Mode](#advanced-mode)
+
+---
+
+## Easy Mode <a id="easy-mode"></a>
+Melde Dich im Admin-Bereich an und wähle `Neuer Beitrag` im Menü links.
+
+Fülle die Felder aus und klicke den Button  **Veröffentlichen**.
+
+Der Inhalt unterstützt HTML und Markdown-Text; hier ist ein [Markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
+
+![Bludit neuer Beitrag](bludit-new-post.png)
+
+---
+
+## <a id="advanced-mode"></a> Advanced Mode
+Du kannst neue Beiträge erstellen, indem du das Dateisystem bearbeitest.
+- Erstelle ein Unterzeichnis im Verzeichnis `/content/posts/`
+- Der Ordnername wird die URI des neuen Beitrages sein
+- Erstelle eine neue Datei mit dem Namen `index.txt` innerhalb des neuen Verzeichnises
+- Bearbeite die Datei `index.txt`
+- Füge zwei Variablen hinzu: `Title:` und `Content:`
+
+### Example
+- Erstelle das Verzeichnis `/content/posts/test`
+- Erstelle die Datei `index.txt` in `/content/posts/test/`
+- Bearbeite die Datei `index.txt`
+- Führe deine Änderungen durch
+
+```
+Title: Neuer Beitrag-Test
+
+Content:
+<h1>Hello Lorem</h1>
+
+## Subtitle for Lorem
+
+It is a long <b>establishedfact</b> that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+
+**Bold text in Markdown format**
+```
